@@ -1,0 +1,8 @@
+This directory contains code used to check RH holds to 3e12.
+
+First install a reasonably recent version of ARB.
+
+Makefile should then do something sensible.
+
+DJ Platt 31/10/2020
+dave.platt@bris.ac.uk
