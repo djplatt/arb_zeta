@@ -16,7 +16,7 @@ arb_fft.o: arb_fft.c arb_fft.h
 	gcc -c -Wall arb_fft.c -O2 -finline-functions -fomit-frame-pointer
 
 arb_zeta: arb_zeta.o arb_fft.o win_zeta.o inter.o turing.o
-	gcc -o arb_zeta arb_zeta.o arb_fft.o turing.o inter.o win_zeta.o -larb
+	gcc -o arb_zeta arb_zeta.o arb_fft.o turing.o inter.o win_zeta.o -larb -lflint
 
 clean:
 	rm -f arb_zeta *.o
